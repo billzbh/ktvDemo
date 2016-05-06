@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Jan 23 18:48:07 CST 2015
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=iMateInterfaceExtension.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|iMateTest>;<jar|iMateInterfaceMemoryCardApi_6.6_20150123.jar>;<jar|iMateInterfacePinpad_6.6_20150123.jar>;<jar|PictureDecoding.jar>;<jar|android-support-v4.jar>;<jar|iMateInterfacePbocHighSDK_6.6_20150123.jar>;<jar|iMateInterfaceJsbPbocSDK_6.6_20150123.jar>;<jar|iMateInterface_6.6_20150123.jar>;<jar|iMateInterfacePbocIssueCard_6.6_20150123.jar>;<jar|iMateInterfaceFingerprint_6.6_20150123.jar>;<jar|iMateInterfacePbocSDK_6.6_20150123.jar>;<jar|iMateInterfaceMifCard_6.6_20150123.jar>;<jar|AndroidPrinterSDK3.0.jar>
+includes=
