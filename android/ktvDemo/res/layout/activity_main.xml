@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" 
+    android:id="@+id/relativeLayout"
+    tools:context="com.hxsmart.icrtest.MainActivity" >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:text="IP地址设置:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="0123456789."
+        android:hint="例如：192.168.11.254"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_toEndOf="@id/tv1"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/tv1"
+        android:layout_alignBottom="@id/tv1"
+        android:ems="15" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/tv1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="30dp"
+        android:text="信号通道:"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignLeft="@id/editText1"
+        android:layout_alignRight="@id/editText1"
+        android:layout_alignStart="@id/editText1"
+        android:layout_alignEnd="@id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_alignTop="@id/textView2"
+        android:layout_alignBottom="@id/textView2"
+        android:max="9"
+        android:gravity="center"
+        android:indeterminate="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView3"
+        android:layout_below="@id/editText1"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_alignTop="@id/textView2"
+        android:layout_alignBottom="@id/textView2"
+        android:gravity="center"
+        android:text="0" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginTop="18dp"
+        android:textColor="#ffff0000"
+        android:text="1. 自定义推杆标识只能在锁定模式下设置\n\n2. 长按右边按钮恢复最近一次设置的值" />
+    
+    <Button
+        android:id="@+id/clearbutton"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView1"
+        android:layout_marginLeft="15dp"
+        android:layout_alignRight="@id/seekBar"
+        android:background="@drawable/shape_bg_button3"
+        android:text="清除所有按键标识" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clearbutton"
+        android:layout_marginTop="10dp"
+		android:layout_alignLeft="@id/clearbutton"
+		android:layout_alignRight="@id/clearbutton"
+        android:background="@drawable/shape_bg_button3"
+        android:text="GO" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_alignLeft="@id/editText1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_alignStart="@id/editText1"
+        android:layout_alignTop="@id/textView2"
+        android:layout_below="@+id/editText1" />
+
+</RelativeLayout>

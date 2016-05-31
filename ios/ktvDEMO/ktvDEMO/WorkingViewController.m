@@ -545,7 +545,10 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
     if([(UILongPressGestureRecognizer*)sender state] == UIGestureRecognizerStateBegan){
         
         int i = [[sender view] tag];
-        ZBInputAlertViewController *alertView = [[ZBInputAlertViewController alloc] initWithTitle:@"请输入新标识" message:nil TextFieldHint:nil TextFieldcontentText:nil viewController:self];
+        NSString *placeText = [((UIButton*)_fifteenButtons[i]) titleForState:UIControlStateNormal];
+        
+        
+        ZBInputAlertViewController *alertView = [[ZBInputAlertViewController alloc] initWithTitle:@"请输入新标识" message:nil TextFieldHint:nil TextFieldcontentText:placeText viewController:self];
         
         
         

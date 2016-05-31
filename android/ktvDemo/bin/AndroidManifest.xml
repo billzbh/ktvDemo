@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hxsmart.KTVtest"
+    android:versionCode="1014"
+    android:versionName="2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+        
+    <uses-permission android:name="android.permission.INTERNET"/> 
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+        
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="掌上2010"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hxsmart.icrtest.LoginActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxsmart.icrtest.WorkingActivity"
+            android:label="掌上2010"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            >
+        </activity>
+        <activity
+            android:name="com.hxsmart.icrtest.MainActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:label="掌上2010" >
+        </activity>
+    </application>
+
+</manifest>
