@@ -30,8 +30,8 @@
                                 <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="er0-6U-jl0">
-                                <rect key="frame" x="228" y="117" width="144" height="144"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="er0-6U-jl0">
+                                <rect key="frame" x="20" y="117" width="560" height="144"/>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsK-ae-3Pq">
                                 <rect key="frame" x="550" y="544" width="30" height="30"/>
@@ -98,7 +98,9 @@
                             <constraint firstItem="pr7-1w-8YZ" firstAttribute="top" secondItem="22Z-w8-mYs" secondAttribute="bottom" constant="8" id="Chp-os-pDq">
                                 <variation key="heightClass=compact-widthClass=compact" constant="14"/>
                             </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="er0-6U-jl0" secondAttribute="trailing" id="I8g-yb-Rz3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gp0-Ob-bda" secondAttribute="leading" id="SBh-9j-RKb"/>
+                            <constraint firstItem="er0-6U-jl0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XTB-ZN-ztc"/>
                             <constraint firstItem="bsK-ae-3Pq" firstAttribute="leading" secondItem="G8s-yr-N1A" secondAttribute="trailing" constant="8" id="YzX-Xd-sH7"/>
                             <constraint firstItem="er0-6U-jl0" firstAttribute="centerX" secondItem="22Z-w8-mYs" secondAttribute="centerX" id="b6k-Nq-dMK"/>
                             <constraint firstItem="22Z-w8-mYs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gxz-EL-bkC"/>
