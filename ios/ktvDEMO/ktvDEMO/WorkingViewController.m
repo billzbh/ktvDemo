@@ -625,16 +625,15 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
 - (IBAction)buttonAction:(UIButton *)sender forEvent:(UIEvent *)event {
     long NUM = (long)[[event.allTouches anyObject] phase];
     Byte sendbyte1 = [sender tag];
-//    NSLog(@"%ld",NUM);
-    static int oneMoved= 0;
+//    static int oneMoved= 0;
     
     if (isLockMode) {
-        if(NUM == 3){
+        if(NUM == UITouchPhaseEnded){
             
-            if (oneMoved==1) {
-                oneMoved =0;
-                return;
-            }
+//            if (oneMoved==1) {
+//                oneMoved =0;
+//                return;
+//            }
 //            NSLog(@"%d 按键按了一下",sendbyte1);
             
             if ([sender isSelected]) {
@@ -659,13 +658,14 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
                 [self sendBytes3:sendBytes3];
                 
             }
-        }else if (1==NUM){
-            oneMoved = 1;
         }
+//        else if (UITouchPhaseMoved==NUM){
+//            oneMoved = 1;
+//        }
         
     }else{
-        if (NUM == 0) {//按下按键
-//            NSLog(@"选中%d",sendbyte1);
+        if (NUM == UITouchPhaseBegan) {//刚开始按下按键
+            NSLog(@"按下 %d",sendbyte1);
             [sender setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             [sender setBackgroundColor:[self getBlueColor]];
             [sender setTintColor:[self getBlueColor]];
@@ -676,11 +676,8 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
             sendBytes3[2]=(Byte)0x7F;
             [self sendBytes3:sendBytes3];
             
-        }else if(1==NUM){
-            
-        }else if(3==NUM)//抬起
-        {
-//            NSLog(@"离开%d",sendbyte1);
+        }else{
+            NSLog(@"离开%d",sendbyte1);
             [sender setTitleColor:[self getBlueColor] forState:UIControlStateNormal];
             [sender setTintColor:[UIColor whiteColor]];
             [sender setBackgroundColor:[UIColor whiteColor]];
@@ -692,45 +689,22 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
             sendBytes3[2]=((UISlider *)_fifteenSliders[sendbyte1]).value;
             [self sendBytes3:sendBytes3];
             
-        }else if(NUM==2){
-            
-            if ([sender isSelected]) {
-                [sender setTitleColor:[self getBlueColor] forState:UIControlStateNormal];
-                [sender setTintColor:[UIColor whiteColor]];
-                [sender setBackgroundColor:[UIColor whiteColor]];
-                [sender setSelected:NO];
-                
-                //uncheck
-                
-                sendBytes3[1]=sendbyte1;
-                sendBytes3[2]=((UISlider *)_fifteenSliders[sendbyte1]).value;
-                [self sendBytes3:sendBytes3];
-                
-            }else{
-                [sender setBackgroundColor:[self getBlueColor]];
-                [sender setTintColor:[self getBlueColor]];
-                [sender setSelected:YES];
-                
-                sendBytes3[1]=sendbyte1;
-                sendBytes3[2]=(Byte)0x7F;
-                [self sendBytes3:sendBytes3];
-            }
         }
     }
 }
 
-- (IBAction)tapGesture:(UITapGestureRecognizer *)sender {
-    
-    //轻击后要做的事情
-//    NSLog(@"点击了 第%d页 第%d行",whichPage,GValue);
-    
-    self.tooltipManager = [[JDFSequentialTooltipManager alloc] initWithHostView:self.view];
-    
-    [self.tooltipManager addTooltipWithTargetView:_whichG hostView:self.view tooltipText:@"This is a tooltip with the backrop enabled. Tap anywhere to advance to the next tooltip." arrowDirection:JDFTooltipViewArrowDirectionLeft width:_topview.bounds.size.width];
-
-    self.tooltipManager.showsBackdropView = YES;
-    [self.tooltipManager showNextTooltip];
-}
+//- (IBAction)tapGesture:(UITapGestureRecognizer *)sender {
+//    
+//    //轻击后要做的事情
+////    NSLog(@"点击了 第%d页 第%d行",whichPage,GValue);
+//    
+//    self.tooltipManager = [[JDFSequentialTooltipManager alloc] initWithHostView:self.view];
+//    
+//    [self.tooltipManager addTooltipWithTargetView:_whichG hostView:self.view tooltipText:@"This is a tooltip with the backrop enabled. Tap anywhere to advance to the next tooltip." arrowDirection:JDFTooltipViewArrowDirectionLeft width:_topview.bounds.size.width];
+//
+//    self.tooltipManager.showsBackdropView = YES;
+//    [self.tooltipManager showNextTooltip];
+//}
 
 -(UIColor*)getBlueColor
 {
@@ -763,12 +737,16 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
 
 -(void)sendBytes2:(Byte*)data
 {
-    [Socket writeData:[NSData dataWithBytes:data length:2] withTimeout:-1 tag:100];
+    if ([Socket isConnected]) {
+        [Socket writeData:[NSData dataWithBytes:data length:2] withTimeout:-1 tag:100];
+    }
 }
 
 -(void)sendBytes3:(Byte*)data
 {
-    [Socket writeData:[NSData dataWithBytes:data length:3] withTimeout:-1 tag:100];
+    if ([Socket isConnected]) {
+        [Socket writeData:[NSData dataWithBytes:data length:3] withTimeout:-1 tag:100];
+    }
 }
 
 

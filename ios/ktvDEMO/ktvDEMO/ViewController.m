@@ -31,6 +31,8 @@
 @property (strong,nonatomic) NSUserDefaults* defaults;
 @property (weak, nonatomic) IBOutlet UIButton *clearFlagBtn;
 
+@property (weak, nonatomic) IBOutlet UIButton *offLine;
+
 @end
 
 @implementation ViewController
@@ -49,11 +51,16 @@
     [_clearFlagBtn.layer setCornerRadius:4];
     [_clearFlagBtn.layer setBorderWidth:1];//设置边界的宽度
     
+    [_offLine.layer setMasksToBounds:YES];//设置按钮的圆角半径不会被遮挡
+    [_offLine.layer setCornerRadius:4];
+    [_offLine.layer setBorderWidth:1];//设置边界的宽度
+    
     //设置按钮的边界颜色
     CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
     CGColorRef color = CGColorCreate(colorSpaceRef, (CGFloat[]){0,0.5,1,1});
     [_TryAgain.layer setBorderColor:color];
     [_clearFlagBtn.layer setBorderColor:color];
+    [_offLine.layer setBorderColor:color];
     
     // Do any additional setup after loading the view, typically from a nib.
     Socket = [GCDAsyncSocket sharedController];
@@ -87,6 +94,7 @@
 - (IBAction)Tryagain:(id)sender {
     [_TryAgain setHidden:YES];
     [_clearFlagBtn setHidden:YES];
+    [_offLine setHidden:YES];
     [_TaskRunFlag startAnimating];
     [self connectToServer];
 }
@@ -141,6 +149,14 @@
     }
     
 }
+
+- (IBAction)go2WorkView:(UIButton *)sender {
+    //转到工作界面
+    UIStoryboard *board = [UIStoryboard storyboardWithName: @"Main" bundle: nil];
+    UIViewController* childController = [board instantiateViewControllerWithIdentifier: @"workingViewController"];
+    [self presentViewController:childController animated:YES completion:nil];
+}
+
 
 -(UIColor*)getBlueColor
 {
@@ -201,6 +217,7 @@
     [_ConnectInfo setText:@"连接失败！换个姿势，我们可以再来一次！"];
     [_TryAgain setHidden:NO];
     [_clearFlagBtn setHidden:NO];
+    [_offLine setHidden:NO];
     if(!isHideSetting)
         [_Setting setHidden:NO];
     [_TaskRunFlag stopAnimating];

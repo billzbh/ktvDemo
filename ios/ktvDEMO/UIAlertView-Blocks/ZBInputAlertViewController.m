@@ -48,7 +48,7 @@
 - (void)showIOS7WithAction:(actionText)actionT
 {
     
-    UIAlertView *customAlertView = [[UIAlertView alloc] initWithTitle:self.title message:self.message delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];
+    UIAlertView *customAlertView = [[UIAlertView alloc] initWithTitle:self.title message:self.message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"完成",nil];
     
     [customAlertView setAlertViewStyle:UIAlertViewStylePlainTextInput];
     
@@ -76,7 +76,11 @@
         actionT(TextField.text);
         
     }];
+    UIAlertAction *CancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {}];
+    
     [alertController addAction:DoneAction];
+    [alertController addAction:CancelAction];
+    
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = _hint;
         [textField setText:_text];
