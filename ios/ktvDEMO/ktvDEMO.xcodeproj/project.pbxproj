@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12001ECA1CFD96D8001F45E9 /* Logo_coolbon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 12001EC91CFD96D8001F45E9 /* Logo_coolbon.jpg */; };
+		12001ECC1CFD9990001F45E9 /* BaseLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 12001ECB1CFD9990001F45E9 /* BaseLogo.png */; };
 		123E141B1CB4E9E900DB5E9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123E141A1CB4E9E900DB5E9A /* QuartzCore.framework */; };
 		124947321CCF0F9E00B90B27 /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249472D1CCF0F9E00B90B27 /* RIButtonItem.m */; };
 		124947331CCF0F9E00B90B27 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1249472F1CCF0F9E00B90B27 /* UIActionSheet+Blocks.m */; };
@@ -30,13 +32,14 @@
 		1271C9311CB343F3003AA8C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1271C92F1CB343F3003AA8C6 /* Main.storyboard */; };
 		1271C9331CB343F3003AA8C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1271C9321CB343F3003AA8C6 /* Assets.xcassets */; };
 		1271C9361CB343F3003AA8C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1271C9341CB343F3003AA8C6 /* LaunchScreen.storyboard */; };
-		1271C93E1CB348C3003AA8C6 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1271C93D1CB348C3003AA8C6 /* Logo.png */; };
 		12BE86161CCDC67000E08152 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BE86151CCDC67000E08152 /* MyView.m */; };
 		12C3F48B1CBE0DC500DE6FD2 /* TRSDialScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C3F4881CBE0DC500DE6FD2 /* TRSDialScrollView.m */; };
 		12C3F48C1CBE0DC500DE6FD2 /* TRSDialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12C3F48A1CBE0DC500DE6FD2 /* TRSDialView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12001EC91CFD96D8001F45E9 /* Logo_coolbon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Logo_coolbon.jpg; sourceTree = "<group>"; };
+		12001ECB1CFD9990001F45E9 /* BaseLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BaseLogo.png; sourceTree = "<group>"; };
 		123E141A1CB4E9E900DB5E9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1249472C1CCF0F9E00B90B27 /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
 		1249472D1CCF0F9E00B90B27 /* RIButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIButtonItem.m; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12001ECD1CFD99A3001F45E9 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				12001ECB1CFD9990001F45E9 /* BaseLogo.png */,
+				12001EC91CFD96D8001F45E9 /* Logo_coolbon.jpg */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
 		1249472B1CCF0F9E00B90B27 /* UIAlertView-Blocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +188,7 @@
 		1271C9251CB343F3003AA8C6 /* ktvDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				12001ECD1CFD99A3001F45E9 /* Logos */,
 				124BBC631CC8B2EC00E34934 /* light_slide_button.png */,
 				1271C9291CB343F3003AA8C6 /* AppDelegate.h */,
 				1271C92A1CB343F3003AA8C6 /* AppDelegate.m */,
@@ -283,8 +296,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1271C93E1CB348C3003AA8C6 /* Logo.png in Resources */,
+				12001ECC1CFD9990001F45E9 /* BaseLogo.png in Resources */,
 				1271C9361CB343F3003AA8C6 /* LaunchScreen.storyboard in Resources */,
+				12001ECA1CFD96D8001F45E9 /* Logo_coolbon.jpg in Resources */,
 				124BBC641CC8B2EC00E34934 /* light_slide_button.png in Resources */,
 				1271C9331CB343F3003AA8C6 /* Assets.xcassets in Resources */,
 				1271C9311CB343F3003AA8C6 /* Main.storyboard in Resources */,
@@ -441,7 +455,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hxsmart.ktvDEMO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hxsmart.ktvDEMO1;
 				PRODUCT_NAME = "掌上2010";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +476,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hxsmart.ktvDEMO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hxsmart.ktvDEMO1;
 				PRODUCT_NAME = "掌上2010";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

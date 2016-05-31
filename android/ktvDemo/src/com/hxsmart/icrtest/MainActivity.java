@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import com.hxsmart.KTVtest.R;
+import com.hxsmart.ktvDemo1.R;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;

@@ -2,7 +2,7 @@
 package me.imid.view;
 
 
-import com.hxsmart.KTVtest.R;
+import com.hxsmart.ktvDemo1.R;
 
 import android.content.Context;
 import android.content.res.Resources;

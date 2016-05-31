@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.hxsmart.KTVtest;
+package com.hxsmart.ktvDemo1;
 
 public final class R {
     public static final class anim {

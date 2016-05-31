@@ -42,7 +42,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import com.hxsmart.KTVtest.R;
+import com.hxsmart.ktvDemo1.R;
 import com.thunder.wheel.view.CharWheelAdapter;
 import com.thunder.wheel.view.NumericWheelAdapter;
 import com.thunder.wheel.view.OnWheelChangedListener;

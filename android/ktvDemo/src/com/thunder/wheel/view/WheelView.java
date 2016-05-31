@@ -22,7 +22,7 @@ package com.thunder.wheel.view;
 import java.util.LinkedList;
 import java.util.List;
 
-import com.hxsmart.KTVtest.R;
+import com.hxsmart.ktvDemo1.R;
 import com.thunder.wheel.view.WheelScroller.SpeedListener;
 
 import android.content.Context;

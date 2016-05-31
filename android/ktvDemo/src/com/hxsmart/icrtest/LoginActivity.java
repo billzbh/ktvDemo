@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+import com.hxsmart.ktvDemo1.R;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,8 +22,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.hxsmart.KTVtest.R;
 
 public class LoginActivity extends Activity {
 
