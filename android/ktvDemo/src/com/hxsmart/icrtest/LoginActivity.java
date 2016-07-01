@@ -12,6 +12,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,6 +23,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.hxsmart.KTVtest.R;
+
+import de.keyboardsurfer.android.widget.crouton.Configuration;
+import de.keyboardsurfer.android.widget.crouton.Configuration.Builder;
+import de.keyboardsurfer.android.widget.crouton.Crouton;
+import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class LoginActivity extends Activity {
 
@@ -60,8 +66,7 @@ public class LoginActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,   
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); 
         setContentView(R.layout.activity_splash);
-        
-        
+
         connectBtn = (Button)findViewById(R.id.connectBtn);
         loadingLog =  (TextView)findViewById(R.id.splashLog);
         settingBtn = (Button)findViewById(R.id.settingBtn);
@@ -299,6 +304,7 @@ public class LoginActivity extends Activity {
 	@Override
 	protected void onPause() {
 		Log.i("zbh", "onPause");
+        Crouton.cancelAllCroutons();
 		super.onPause();
 	}
 
@@ -307,6 +313,7 @@ public class LoginActivity extends Activity {
 		Log.i("zbh", "onResume");
 		loadingLog.setText("欢迎来到掌中2010S");
 		IP = sharedpreferences.getString(KEY_IP, "192.168.11.254");
+        Crouton.makeText(this, "广州市谱凌光电科技有限公司", Style.CONFIRM, R.layout.activity_splash).show();
 		super.onResume();
 	}
 

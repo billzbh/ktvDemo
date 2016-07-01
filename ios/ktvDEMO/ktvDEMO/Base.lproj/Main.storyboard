@@ -84,6 +84,16 @@
                                     <action selector="go2WorkView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L91-ag-8JQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广州市谱凌光电科技有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6s-JU-Ylf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="28"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="odg-kG-KNR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -98,7 +108,9 @@
                             <constraint firstItem="pr7-1w-8YZ" firstAttribute="top" secondItem="22Z-w8-mYs" secondAttribute="bottom" constant="8" id="Chp-os-pDq">
                                 <variation key="heightClass=compact-widthClass=compact" constant="14"/>
                             </constraint>
+                            <constraint firstItem="e6s-JU-Ylf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="EMd-qw-6zO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="er0-6U-jl0" secondAttribute="trailing" id="I8g-yb-Rz3"/>
+                            <constraint firstItem="e6s-JU-Ylf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KAD-Ja-ydf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gp0-Ob-bda" secondAttribute="leading" id="SBh-9j-RKb"/>
                             <constraint firstItem="er0-6U-jl0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XTB-ZN-ztc"/>
                             <constraint firstItem="bsK-ae-3Pq" firstAttribute="leading" secondItem="G8s-yr-N1A" secondAttribute="trailing" constant="8" id="YzX-Xd-sH7"/>
@@ -112,6 +124,7 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="42.5"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="57.5"/>
                             </constraint>
+                            <constraint firstItem="e6s-JU-Ylf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pkd-ke-82S"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Car-CS-Phc" secondAttribute="bottom" constant="26" id="udB-0V-nzb">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                             </constraint>
