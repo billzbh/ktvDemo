@@ -23,15 +23,14 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.hxsmart.KTVtest.R;
-
-import de.keyboardsurfer.android.widget.crouton.Configuration;
-import de.keyboardsurfer.android.widget.crouton.Configuration.Builder;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
 public class LoginActivity extends Activity {
 
 	private static final boolean isHideSetting = true;//是否隐藏【设置】按钮
+	private static final boolean isHideCompanyName = true;//是否隐藏 【公司名称】
+	
     private  static final String KEY_IP = "KEYIP" ;
     private  static final String MyPREFERENCES = "LIUJIEWEN" ;
     private  static final String MyPREFERENCES_BAK = "LIUJIEWEN_BAK" ;
@@ -304,7 +303,8 @@ public class LoginActivity extends Activity {
 	@Override
 	protected void onPause() {
 		Log.i("zbh", "onPause");
-        Crouton.cancelAllCroutons();
+		if(!isHideCompanyName)
+			Crouton.cancelAllCroutons();
 		super.onPause();
 	}
 
@@ -313,7 +313,8 @@ public class LoginActivity extends Activity {
 		Log.i("zbh", "onResume");
 		loadingLog.setText("欢迎来到掌中2010S");
 		IP = sharedpreferences.getString(KEY_IP, "192.168.11.254");
-        Crouton.makeText(this, "广州市谱凌光电科技有限公司", Style.CONFIRM, R.layout.activity_splash).show();
+		if(!isHideCompanyName)
+			Crouton.makeText(this, "广州市谱凌光电科技有限公司", Style.CONFIRM, R.layout.activity_splash).show();
 		super.onResume();
 	}
 
