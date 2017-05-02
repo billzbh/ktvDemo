@@ -449,14 +449,14 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
 
 - (IBAction)resetAllSliderValue2Zero:(id)sender {
 //    NSLog(@"清除一页的推杆");
-    ZBHAlertViewController *alertView = [[ZBHAlertViewController alloc] initWithTitle:@"警告" message:@"是否这一页所有推杆置零?" viewController:self];
+    ZBHAlertViewController *alertView = [[ZBHAlertViewController alloc] initWithTitle:@"Warning" message:@"Do you want all PushRods of this page to be reset?" viewController:self];
     
-    RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"取消" action:^{
+    RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"Cancel" action:^{
         
     }];
     [alertView addButton:cancelItem type:RIButtonItemType_Cancel];
     
-    RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"确定" action:^{
+    RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"OK" action:^{
         [self SliderResetZero];
     }];
     [alertView addButton:okItem type:RIButtonItemType_Destructive];
@@ -468,14 +468,14 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
     //弹出对话框
     if([(UILongPressGestureRecognizer*)sender state] == UIGestureRecognizerStateBegan){
 //        NSLog(@"重置所有页的推杆");
-        ZBHAlertViewController *alertView = [[ZBHAlertViewController alloc] initWithTitle:@"警告" message:@"是否所有页的所有推杆置零?" viewController:self];
+        ZBHAlertViewController *alertView = [[ZBHAlertViewController alloc] initWithTitle:@"Warning" message:@"Do you want all PushRods of these pages to be reset?" viewController:self];
         
-        RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"取消" action:^{
+        RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"Cancel" action:^{
             
         }];
         [alertView addButton:cancelItem type:RIButtonItemType_Cancel];
         
-        RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"确定" action:^{
+        RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"OK" action:^{
 
             [self allSliderResetZero];
         }];
@@ -500,7 +500,7 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
             placeText = [Gun3 objectAtIndex:GValue-1];
         }
         
-        ZBInputAlertViewController *alertView = [[ZBInputAlertViewController alloc] initWithTitle:@"请输入新标识" message:nil TextFieldHint:@"" TextFieldcontentText:placeText viewController:self];
+        ZBInputAlertViewController *alertView = [[ZBInputAlertViewController alloc] initWithTitle:@"input new flag" message:nil TextFieldHint:@"" TextFieldcontentText:placeText viewController:self];
         
         [alertView showWithAction:^(NSString *PlainText) {
             
@@ -548,7 +548,7 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
         NSString *placeText = [((UIButton*)_fifteenButtons[i]) titleForState:UIControlStateNormal];
         
         
-        ZBInputAlertViewController *alertView = [[ZBInputAlertViewController alloc] initWithTitle:@"请输入新标识" message:nil TextFieldHint:nil TextFieldcontentText:placeText viewController:self];
+        ZBInputAlertViewController *alertView = [[ZBInputAlertViewController alloc] initWithTitle:@"input new flag" message:nil TextFieldHint:nil TextFieldcontentText:placeText viewController:self];
         
         
         
@@ -844,16 +844,16 @@ static Byte RightsendDown[2] = {0x9A,0xDB};
 
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err
 {
-    NSLog(@"失败信息: %@, 错误码：%d",[[err userInfo] objectForKey:@"NSLocalizedDescription"],[err code]);
+    NSLog(@"error message: %@, error code：%d",[[err userInfo] objectForKey:@"NSLocalizedDescription"],[err code]);
     
-    ZBHAlertViewController *alertView = [[ZBHAlertViewController alloc] initWithTitle:@"重新连接？" message:@"网络发生了错误！" viewController:self];
+    ZBHAlertViewController *alertView = [[ZBHAlertViewController alloc] initWithTitle:@"reconnect？" message:@"Network error!" viewController:self];
     
-    RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"取消" action:^{
+    RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"Cancel" action:^{
         
     }];
     [alertView addButton:cancelItem type:RIButtonItemType_Cancel];
     
-    RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"确定" action:^{
+    RIButtonItem *okItem = [RIButtonItem itemWithLabel:@"OK" action:^{
         [self dismissViewControllerAnimated:YES completion:nil];
         
     }];

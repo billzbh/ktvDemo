@@ -86,7 +86,7 @@
 }
 
 - (IBAction)settingAction:(UIButton *)sender {
-    [_ConnectInfo setText:@"断开连接..."];
+    [_ConnectInfo setText:@"disconnecting..."];
     [Socket setDelegate:nil];
     [Socket disconnect];
 }
@@ -169,13 +169,13 @@
 -(void)connectToServer
 {
     if ([Socket isConnected]) {
-        [_ConnectInfo setText:@"已经连接,请不要重复连接"];
+        [_ConnectInfo setText:@"has connected，please don‘t reconnect"];
         [_TaskRunFlag stopAnimating];
         return;
     }
     
     NSLog(@"connecting to %@ %u",IP,PORT);
-    [_ConnectInfo setText:@"连接中..."];
+    [_ConnectInfo setText:@"connecting..."];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSError *error = nil;
         [Socket connectToHost:IP onPort:PORT withTimeout:5 error:&error];
@@ -186,7 +186,7 @@
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port
 {
     NSLog(@"CONNECT %@[%d] ok",host,port);
-    [_ConnectInfo setText:@"连接成功！"];
+    [_ConnectInfo setText:@"connect success！"];
     [_TryAgain setHidden:NO];
     [_clearFlagBtn setHidden:NO];
     
@@ -201,7 +201,7 @@
         int on = 1;
         if (setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, (char*)&on, sizeof(on)) == -1) {
             /* handle error */
-            NSLog(@"设置TCP_NoDelay失败！");
+            NSLog(@"set TCP_NoDelay fail！");
         }
     }];
     
@@ -213,8 +213,8 @@
 
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err
 {
-    NSLog(@"连接错误：%@",err);
-    [_ConnectInfo setText:@"连接失败！换个姿势，我们可以再来一次！"];
+    NSLog(@"connect error：%@",err);
+    [_ConnectInfo setText:@"connect error！We can do it again!"];
     [_TryAgain setHidden:NO];
     [_clearFlagBtn setHidden:NO];
     [_offLine setHidden:NO];
