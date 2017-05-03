@@ -1,0 +1,7 @@
+#Tue May 02 19:47:30 CST 2017
+base.0=/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f30171e8d7fb474bd81ec63a16051b2ecaf09f66
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b8b2a175db2879139a053e93b5a72335438cbb82/classes.dex
+base.1=/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b8b2a175db2879139a053e93b5a72335438cbb82
+file.0=/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f30171e8d7fb474bd81ec63a16051b2ecaf09f66/classes.dex

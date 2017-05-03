@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="output"><source path="/Users/lig/.android/build-cache/eab8129183af0b71d7a55e8c68fd9ab9e0bfa748/output/assets"/></dataSet><dataSet config="main"><source path="/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/assets"/><source path="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/lig/cordova6.2.0/ktvDemoAS/app/src/debug/assets"/></dataSet></merger>

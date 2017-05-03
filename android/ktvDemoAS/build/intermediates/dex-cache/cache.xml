@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Development/as_SDK/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/pre-dexed/release/support-annotations-23.4.0_952f476fc2029f394138a741a270b10397feabdb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Development/as_SDK/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_952f476fc2029f394138a741a270b10397feabdb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lig/.android/build-cache/eab8129183af0b71d7a55e8c68fd9ab9e0bfa748/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3318b0bebd6ede1d9f0164c3d3d903c28c465076/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lig/.android/build-cache/eab8129183af0b71d7a55e8c68fd9ab9e0bfa748/output/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_c27304359953504f1ab0c45afd0d0c6e862eb646/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lig/.android/build-cache/eab8129183af0b71d7a55e8c68fd9ab9e0bfa748/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/pre-dexed/release/classes_3318b0bebd6ede1d9f0164c3d3d903c28c465076.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ed1e7c3554ea63586d9732366a53a99242fcef11">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_b8b2a175db2879139a053e93b5a72335438cbb82/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/lig/.android/build-cache/eab8129183af0b71d7a55e8c68fd9ab9e0bfa748/output/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/pre-dexed/release/internal_impl-23.4.0_c27304359953504f1ab0c45afd0d0c6e862eb646.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f30171e8d7fb474bd81ec63a16051b2ecaf09f66/classes.dex" />
+    </item>
+
+</items>

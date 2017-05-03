@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_pressed3.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_pressed3.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/thumb.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/thumb.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/leftbutton.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/leftbutton.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_bg_button3.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_bg_button3.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_select.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_select.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_bg_button.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_bg_button.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_select3.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_select3.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/wheel_bg.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/wheel_bg.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_pressed.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_pressed.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_bg_button2.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_bg_button2.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/wheel_val.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/wheel_val.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/rightbutton.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/rightbutton.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_pressed2.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_pressed2.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape_defalut.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape_defalut.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shape2.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-hdpi/shape2.xml"
+    }
+]

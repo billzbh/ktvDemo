@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/fiel2.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/fiel2.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/tipview.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/tipview.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/fiel3.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/fiel3.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/activity_fullscreen.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/activity_fullscreen.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/layout/fiel1.xml",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/layout/fiel1.xml"
+    }
+]

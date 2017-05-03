@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_launcher.png",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/drawable-xxhdpi/frame.png",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-xxhdpi/frame.png"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/drawable-xxhdpi/btn_pressed.png",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-xxhdpi/btn_pressed.png"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/drawable-xxhdpi/bottom.png",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-xxhdpi/bottom.png"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/drawable-xxhdpi/mask.png",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-xxhdpi/mask.png"
+    },
+    {
+        "merged": "/Users/lig/cordova6.2.0/ktvDemoAS/app/build/intermediates/res/merged/debug/drawable-xxhdpi/btn_unpressed.png",
+        "source": "/Users/lig/cordova6.2.0/ktvDemoAS/app/src/main/res/drawable-xxhdpi/btn_unpressed.png"
+    }
+]

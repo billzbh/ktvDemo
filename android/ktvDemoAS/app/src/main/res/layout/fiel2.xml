@@ -1,0 +1,269 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1"
+        >
+
+        <ToggleButton
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textOn="\nOPEN\n"
+            android:textOff="\nCLOSE\n"
+            android:background="@drawable/shape_bg_button"
+             />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+            <com.hxsmart.icrtest.VerticalSeekBar
+                android:id="@+id/verticalSeekBar6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tip6"
+                android:layout_centerHorizontal="true"
+                android:thumb="@drawable/thumb"
+                 android:paddingTop="24dp"
+                  android:paddingBottom="24dp"
+                android:thumbOffset="0dip" />
+              <TextView
+                android:id="@+id/tip6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#ffff00ff"
+                android:text="0" />             
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <ToggleButton
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textOn="\nOPEN\n"
+            android:textOff="\nCLOSE\n"
+            android:background="@drawable/shape_bg_button"
+             />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <com.hxsmart.icrtest.VerticalSeekBar
+                android:id="@+id/verticalSeekBar7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tip7"
+                android:layout_centerHorizontal="true"
+                android:thumb="@drawable/thumb"
+                 android:paddingTop="24dp"
+                  android:paddingBottom="24dp"
+                android:thumbOffset="0dip" />
+             <TextView
+                android:id="@+id/tip7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#ffff00ff"
+                android:text="0" />             
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <ToggleButton
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textOn="\nOPEN\n"
+            android:textOff="\nCLOSE\n"
+            android:background="@drawable/shape_bg_button"
+             />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="8" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <com.hxsmart.icrtest.VerticalSeekBar
+                android:id="@+id/verticalSeekBar8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tip8"
+                android:layout_centerHorizontal="true"
+                android:thumb="@drawable/thumb"
+                 android:paddingTop="24dp"
+                  android:paddingBottom="24dp"
+                android:thumbOffset="0dip" />
+             <TextView
+                android:id="@+id/tip8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#ffff00ff"
+                android:text="0" />             
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <ToggleButton
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textOn="\nOPEN\n"
+            android:textOff="\nCLOSE\n"
+            android:background="@drawable/shape_bg_button"
+             />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="9" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             >
+            
+            <com.hxsmart.icrtest.VerticalSeekBar
+                android:id="@+id/verticalSeekBar9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tip9"
+                android:layout_centerHorizontal="true"
+                android:thumb="@drawable/thumb"
+                 android:paddingTop="24dp"
+                  android:paddingBottom="24dp"
+                android:thumbOffset="0dip" />
+             <TextView
+                android:id="@+id/tip9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#ffff00ff"
+                android:text="0" />              
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <ToggleButton
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textOn="\nOPEN\n"
+            android:textOff="\nCLOSE\n"
+            android:background="@drawable/shape_bg_button"
+             />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <com.hxsmart.icrtest.VerticalSeekBar
+                android:id="@+id/verticalSeekBar10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tip10"
+                android:layout_centerHorizontal="true"
+                android:thumb="@drawable/thumb"
+                 android:paddingTop="24dp"
+                  android:paddingBottom="24dp"
+                android:thumbOffset="0dip" />
+             <TextView
+                android:id="@+id/tip10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#ffff00ff"
+                android:text="0" />              
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

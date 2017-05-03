@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/PreviewBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:background="#00000000"
+        android:textColor="#ff20b2aa"
+        android:text="Preview" />
+        
+    <Button
+        android:id="@+id/settingBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="8dp"
+        android:background="#00000000"
+        android:textColor="#ff20b2aa"
+        android:text="setting" />
+
+    <Button
+        android:id="@+id/connectBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_bg_button3"
+        android:text="Once Again" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" >
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/splashLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="27dp"
+        android:text="Welcome to palm 2010"
+        android:textColor="#ff20b2aa"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/breaksocket"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignBaseline="@+id/settingBtn"
+        android:layout_alignBottom="@+id/settingBtn"
+        android:layout_toLeftOf="@+id/settingBtn"
+        android:background="@drawable/shape_bg_button3"
+        android:text="diconnected" />
+
+    <Button
+        android:id="@+id/clearFlagBtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/breaksocket"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/breaksocket"
+        android:layout_toStartOf="@id/breaksocket"
+        android:layout_toRightOf="@id/connectBtn"
+        android:layout_toEndOf="@id/connectBtn"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/shape_bg_button3"
+        android:text="clear flag" />
+
+</RelativeLayout>
